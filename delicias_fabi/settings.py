@@ -9,6 +9,9 @@ SECRET_KEY = config('SECRET_KEY', default='django-chave-local-desenvolvimento-12
 DEBUG = config('DEBUG', default=True, cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='*', cast=Csv())
+CSRF_TRUSTED_ORIGINS = [
+    'https://websander-ardmcpanctfpb5fm.canadacentral-01.azurewebsites.net',
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
